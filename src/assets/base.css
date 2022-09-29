@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color:rgb(2, 134, 95) ;
+  
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas: 
+    "header header"
+    "sidenav content"
+    "footer footer";
+}
+
+#header, #content, #sidenav, #footer {
+  border: 2px solid rgb(0, 85, 59);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;  font-size: 40px;
+  
+}
+
+#header {
+  grid-area: header;
+  color: black;
+}
+#content {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
+  color:  red;
+}
+#footer {
+  grid-area: footer;
+  color:  black;
+}
+#sidenav {
+  grid-area: sidenav;
+  color:  black;
+}
+
+.block {
+  width: 300px;
+  height: 300px;
+  border: 2px solid  rgb(0, 85, 59);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  background-image: url(https://pbs.twimg.com/profile_images/1297258666417172480/K5ZbmUYT_400x400.jpg);
+   
+}
+
+.block:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
